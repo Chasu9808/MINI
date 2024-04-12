@@ -2,10 +2,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('../cartoongame3.jpg'); /* 배경 이미지 경로 */
+    background-size: cover; /* 이미지가 요소를 완전히 덮도록 크기 조절 */
+    background-repeat: no-repeat; /* 배경 이미지 반복 설정 */
+    background-position: center; /* 배경 이미지를 가운데로 정렬 */
+    
 }
 
 header {
-    background-color: #333;
+    background-color: black;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -27,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
@@ -40,7 +45,7 @@ section h2 {
 }
 
 footer {
-    background-color: #333;
+    background-color: black;
     color: #fff;
     text-align: center;
     padding: 10px 0;
