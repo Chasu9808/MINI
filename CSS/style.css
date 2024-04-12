@@ -1,7 +1,7 @@
 /* CSS/style.css */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('../cartoongame5.jpg');
+    background-image: url('../cartoongame3.jpg');
     background-size: cover;
     background-position: center;
     display: flex; /* 부모 요소를 플렉스 박스로 설정 */
@@ -35,7 +35,7 @@ body {
     box-sizing: border-box;
 }
 .login-container input[type="submit"] {
-    background-color: #4caf50;
+    background-color: black;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -62,6 +62,29 @@ body {
     letter-spacing: 2px;
     line-height: 1.5;
 }
+
+.signup-link,
+.forgot-password-link {
+    display: block; /* 링크를 블록 수준 요소로 만들어 줍니다. */
+    margin-top: 10px; /* 다른 요소와의 간격을 조절합니다. */
+    text-decoration: none; /* 밑줄 제거 */
+    color: #007bff; /* 링크 색상 지정 */
+}
+
+.signup-link:hover,
+.forgot-password-link:hover {
+    text-decoration: underline; /* 호버 시에 밑줄 표시 */
+}
+
+/* 메인 화면 바로가기 버튼 스타일 */
+.main-page-link {
+    display: block; /* 가운데 정렬을 위해 블록 요소로 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    font-size: 40px; /* 글자 크기 설정 */
+    text-decoration: none;
+    color: white; /* 링크 색상 */
+}
+
 
 
 

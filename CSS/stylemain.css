@@ -48,3 +48,18 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* 로그인창 바로가기 링크 스타일 */
+.login-link {
+    position: absolute; /* 절대 위치 설정 */
+    top: 10px; /* 위쪽 여백 */
+    right: 10px; /* 오른쪽 여백 */
+    text-decoration: none; /* 밑줄 제거 */
+    color: white; /* 링크 색상 */
+    font-size: 20px; /* 글자 크기 설정 */
+}
+
+
+
+
+
