@@ -1,0 +1,80 @@
+/* CSS/styleauth.css */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../cartoongame3.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex; /* 부모 요소를 플렉스 박스로 설정 */
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    height: 100vh; /* 화면 전체 높이를 기준으로 정렬 */
+}
+
+.container {
+    width: 30%;
+    margin: 300px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+.center-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+/* 메인 화면 바로가기 버튼 스타일 */
+.main-page-link {
+    display: block; /* 가운데 정렬을 위해 블록 요소로 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    font-size: 40px; /* 글자 크기 설정 */
+    text-decoration: none;
+    color: white; /* 링크 색상 */
+}
