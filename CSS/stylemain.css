@@ -112,32 +112,30 @@ footer {
 /* stylemain.css */
 
 /* 드롭다운 메뉴 스타일 */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
-    white-space: nowrap; /* 항목이 한 줄에 표시되도록 설정 */
+    width: auto; /* 너비 자동으로 설정 */
+    min-width: 120px; /* 최소 너비 설정 */
 }
 
-/* 하위 항목 박스의 항목들을 수평으로 나열 */
 .dropdown-content a {
     color: black;
-    padding: 8px 12px; /* 패딩 조정 */
+    padding: 10px 15px; /* 좌우 패딩 조정 */
     text-decoration: none;
-    display: inline-block; /* 항목들을 수평으로 정렬 */
+    display: block; /* 항목을 수직으로 나열 */
+    transition: background-color 0.3s; /* 배경색 전환 효과 */
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #ddd; /* 호버 시 배경색 변경 */
 }
 
+
 .dropdown:hover .dropdown-content {
-    display: block; /* 부모 요소가 hover될 때 하위 항목 박스를 표시 */
+    display: block;
 }
+
