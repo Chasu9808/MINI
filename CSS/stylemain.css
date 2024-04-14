@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('../cartoongame3.jpg'); /* 배경 이미지 경로 */
+    background-image: url('../gameImage/cartoongame3.jpg'); /* 배경 이미지 경로 */
     background-size: cover; /* 이미지가 요소를 완전히 덮도록 크기 조절 */
     background-repeat: no-repeat; /* 배경 이미지 반복 설정 */
     background-position: center; /* 배경 이미지를 가운데로 정렬 */
@@ -123,18 +123,15 @@ footer {
     background-color: #f9f9f9;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
-    min-width: 160px;
     white-space: nowrap; /* 항목이 한 줄에 표시되도록 설정 */
 }
 
-/* 하위 항목 박스의 항목들을 옆으로 나열되게 설정 */
+/* 하위 항목 박스의 항목들을 수평으로 나열 */
 .dropdown-content a {
     color: black;
     padding: 8px 12px; /* 패딩 조정 */
     text-decoration: none;
-    display: inline-block; /* 항목을 인라인 블록 요소로 설정하여 옆으로 정렬 */
-    width: auto; /* 너비를 자동으로 설정하여 내용에 맞게 크기 조정 */
-    box-sizing: border-box; /* padding, border를 포함한 너비 설정 */
+    display: inline-block; /* 항목들을 수평으로 정렬 */
 }
 
 .dropdown-content a:hover {
@@ -142,11 +139,5 @@ footer {
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: block; /* 부모 요소가 hover될 때 하위 항목 박스를 표시 */
 }
-
-
-
-
-
-

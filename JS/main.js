@@ -19,7 +19,7 @@ window.onload = function() {
 function adjustDropdownSize() {
     var dropdown = document.getElementById("gameListDropdown");
     var itemsCount = dropdown.getElementsByTagName("a").length;
-    var itemWidth = 50; // 각 항목의 기본 너비
+    var itemWidth = 10; // 각 항목의 기본 너비
 
     // 하위 항목 박스의 너비를 항목 수에 따라 조정
     dropdown.style.width = (itemsCount * itemWidth) + "px";
