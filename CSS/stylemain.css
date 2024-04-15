@@ -108,6 +108,11 @@ footer {
     line-height: .5;
 }
 
+.center-text img {
+    cursor: pointer;
+    margin-top: 900px; /* 이미지를 아래로 내리는 마진 값 */
+}
+
 
 /* stylemain.css */
 
@@ -138,4 +143,5 @@ footer {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 
