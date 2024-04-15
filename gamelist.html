@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게임리스트</title>
+    <link rel="stylesheet" href="CSS/stylenotice.css">
+    <script src="./JS/notice.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- 로그인창 바로가기 링크 -->
+        <a href="login.html" class="login-link" onclick="redirectToMain()">LOGIN</a>
+    </header>
+
+    <div class="center-text">
+        <!-- <h1> GAME COLLECTION </h1> -->
+        <a href="index.html" class="main-page-link"> GAME COLLECTION </a>
+    </div> 
+
+    <nav>
+        <ul>
+            <!-- 게임 리스트 -->
+            <li class="dropdown">
+                <a href="gamelist.html">게임 리스트</a>
+                <div class="dropdown-content">
+                    <a href="rpg.html">RPG</a>
+                    <a href="tcg.html">TCG</a>
+                    <a href="aos.html">AOS</a>
+                    <a href="fps.html">FPS</a>
+                    <a href="tps.html">TPS</a>
+                    <a href="acade.html">ACADE</a>
+                    <a href="ticoon.html">TICOON</a>
+                    <a href="music.html">MUSIC</a>
+                </div>
+            </li>
+            <!-- 스크린샷 -->
+            <li><a href="#">스크린샷</a></li>
+            <!-- 커뮤니티 -->
+            <li><a href="#">커뮤니티</a></li>
+        </ul>
+    </nav>
+    <div class="image-grid">
+        <div class="image-box" onmouseenter="showText('text1')" onmouseleave="hideText('text1')">
+            <div class="image-content">
+                <img src="./gameImage/RPG.gif" alt="RPG">
+                <div class="text-container" id="text1">
+                    <p><a href="rpg.html">RPG</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-box" onmouseenter="showText('text2')" onmouseleave="hideText('text2')">
+            <div class="image-content">
+                <img src="./gameImage/TCG.gif" alt="TCG">
+                <div class="text-container" id="text2">
+                    <p><a href="tcg.html">TCG</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-grid">
+        <div class="image-box" onmouseenter="showText('text3')" onmouseleave="hideText('text1')">
+            <div class="image-content">
+                <img src="./gameImage/AOS.gif" alt="AOS">
+                <div class="text-container" id="text3">
+                    <p><a href="aos.html">AOS</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-box" onmouseenter="showText('text4')" onmouseleave="hideText('text2')">
+            <div class="image-content">
+                <img src="./gameImage/FPS.gif" alt="FPS">
+                <div class="text-container" id="text4">
+                    <p><a href="fps.html">FPS</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-grid">
+        <div class="image-box" onmouseenter="showText('text5')" onmouseleave="hideText('text1')">
+            <div class="image-content">
+                <img src="./gameImage/TPS.gif" alt="TPS">
+                <div class="text-container" id="text5">
+                    <p><a href="tps.html">TPS</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-box" onmouseenter="showText('text6')" onmouseleave="hideText('text2')">
+            <div class="image-content">
+                <img src="./gameImage/ACADE.gif" alt="ACADE">
+                <div class="text-container" id="text6">
+                    <p><a href="acade.html">ACADE</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-grid">
+        <div class="image-box" onmouseenter="showText('text7')" onmouseleave="hideText('text1')">
+            <div class="image-content">
+                <img src="./gameImage/TICOON.gif" alt="TICOON">
+                <div class="text-container" id="text7">
+                    <p><a href="ticoon.html">TICOON</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-box" onmouseenter="showText('text2')" onmouseleave="hideText('text2')">
+            <div class="image-content">
+                <img src="./gameImage/MUSIC.gif" alt="이미지2">
+                <div class="text-container" id="text2">
+                    <p><a href="music.html">MUSIC</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
