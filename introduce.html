@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게임 소개</title>
+    <link rel="stylesheet" href="CSS/styleintroduce.css">
+    <script src="./JS/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- 로그인창 바로가기 링크 -->
+        <a href="login.html" class="login-link" onclick="redirectToMain()">LOGIN</a>
+    </header>
+
+    <div class="center-text">
+        <!-- <h1> GAME COLLECTION </h1> -->
+        <a href="index.html" class="main-page-link"> GAME COLLECTION </a>
+    </div> 
+
+    <nav>
+        <ul>
+            <!-- 게임 리스트 -->
+            <li class="dropdown">
+                <a href="#" >게임 리스트</a>
+                <div class="dropdown-content">
+                    <a href="G_RPG.html">RPG</a>
+                    <a href="G_TCG.html">TCG</a>
+                    <a href="G.AOS_">AOS</a>
+                    <a href="G.FPS"> FPS</a>
+                    <a href="G.TPS">TPS</a>
+                    <a href="G.SPORTS">ACADE</a>
+                    <a href="G.TICOON">Ticoon</a>
+                    <a href="G.MUSIC">Music</a>
+                </div>
+            </li>
+            <!-- 스크린샷 -->
+            <li><a href="#">스크린샷</a></li>
+            <!-- 커뮤니티 -->
+            <li><a href="#">커뮤니티</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="section-box">
+            <h2>사이트 배경</h2>
+            <p>게임관련하여 즐기시는 분들은 전부 모여서 할 수 있는 온라인 소통창고입니다.<br>
+               모두가 자신들이 모은 게임들을 공유하고, 관련된 댓글들을 보며 사람들의 취향과 본인의 취향을 찾아보세요!!!! </p>
+        </section>
+
+        <section id="services" class="section-box">
+            <h2>제공하는 서비스</h2>
+            <ul>
+                <li>게임 리스트: 게임종류별 리스트를 보여줍니다.</li>
+                <li>스크린샷: 게임할때 잊기힘든 명장면들을 캡쳐해 보세요</li>
+                <li>커뮤니티: 각자 가지고 있는 나만의 게임콜렉션들에 대해 자유롭게 공유해보세요</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section-box">
+            <h2>문의하기</h2>
+            <p>문의사항이나 의견이 있으시면 아래 양식을 작성하여 보내주세요.</p>
+            <form action="submit.php" method="post">
+                <label for="name">이름:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">이메일:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">메시지:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <button type="submit">보내기</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 사이트 이름. 모든 권리 보유.</p>
+    </footer>
+
+</body>
+</html>

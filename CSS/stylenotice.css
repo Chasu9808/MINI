@@ -208,7 +208,60 @@ a:hover {
     color: none; /* 호버 시 색 변환 없음 */
 }
 
+/* style.css */
 
+/* 공지사항 폼 스타일 */
+#announcement-form {
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#announcement {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* 사용자가 텍스트 영역 크기를 조절하지 못하도록 설정 */
+}
+
+#announcement-form button {
+    background-color: black; /* 초록색 */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#announcement-form button:hover {
+    background-color: #45a049; /* 더 진한 초록색 */
+}
+
+.container {
+    width: 80%; /* 원하는 너비로 조정하세요 */
+    margin: 0 auto; /* 가운데 정렬 */
+    background-color: #ffffff; /* 백그라운드 색상 */
+    border-radius: 20px; /* 둥근 모서리 */
+    padding: 50px; /* 내부 여백 */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+#announcement-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#announcement-list li {
+    background-color: #f9f9f9;
+    border-radius: 10px; /* 둥근 모서리 */
+    padding: 15px; /* 내부 여백 */
+    margin-bottom: 10px; /* 아래쪽 여백 */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
 
 
 

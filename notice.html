@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항 알림판</title>
+    <link rel="stylesheet" href="CSS/stylenotice.css">
+    <script src="./JS/notice.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- 로그인창 바로가기 링크 -->
+        <a href="login.html" class="login-link" onclick="redirectToMain()">LOGIN</a>
+    </header>
+
+    <div class="center-text">
+        <!-- <h1> GAME COLLECTION </h1> -->
+        <a href="index.html" class="main-page-link"> GAME COLLECTION </a>
+    </div> 
+
+    <nav>
+        <ul>
+            <!-- 게임 리스트 -->
+            <li class="dropdown">
+                <a href="#" >게임 리스트</a>
+                <div class="dropdown-content">
+                    <a href="G_RPG.html">RPG</a>
+                    <a href="G_TCG.html">TCG</a>
+                    <a href="G.AOS_">AOS</a>
+                    <a href="G.FPS"> FPS</a>
+                    <a href="G.TPS">TPS</a>
+                    <a href="G.SPORTS">ACADE</a>
+                    <a href="G.TICOON">Ticoon</a>
+                    <a href="G.MUSIC">Music</a>
+                </div>
+            </li>
+            <!-- 스크린샷 -->
+            <li><a href="#">스크린샷</a></li>
+            <!-- 커뮤니티 -->
+            <li><a href="#">커뮤니티</a></li>
+        </ul>
+    </nav>
+    <body>
+        <div class="container">
+            <h1>공지사항 알림판</h1>
+    
+            <form id="announcement-form">
+                <label for="announcement">새로운 공지 추가:</label><br>
+                <textarea id="announcement" name="announcement" rows="4" cols="50" required></textarea><br>
+                <button type="submit">추가</button>
+            </form>
+    
+            <!-- HTML -->
+            <ul id="announcement-list">
+            <!-- 이 공간에 입력된 공지사항이 자동으로 추가됩니다 -->
+            </ul>
+        </div>
+    
+        <script src="./JS/announcement.js" defer></script>
+    </body>
+    </html>
+
