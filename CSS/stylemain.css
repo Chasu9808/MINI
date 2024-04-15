@@ -42,11 +42,12 @@ nav ul li a {
     display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
-    color: black; /* 글자색을 흰색으로 변경 */
+    font-size: 25px;
+    color: black; /* 글자색을 검은색으로 변경 */
     /* background-color:  초록색 배경 추가 */
     border-radius: 5px; /* 모서리를 둥글게 만듭니다. */
     transition: background-color 0.3s ease; /* 배경색 변경에 부드러운 전환 효과 적용 */
-    font-weight: 700; /* 글꼴을 두껍게 만듭니다. */
+    font-weight: 900; /* 글꼴을 두껍게 만듭니다. */
 }
 
 nav ul li a:hover {
@@ -123,7 +124,7 @@ footer {
     background-color: #f9f9f9;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
-    width: auto; /* 너비 자동으로 설정 */
+    width: 173px; /* 너비 자동으로 설정 */
     min-width: 120px; /* 최소 너비 설정 */
 }
 
@@ -151,14 +152,61 @@ footer {
 }
 
 .image-box {
-    width: calc(50% - 150px); /* 이미지 박스의 너비를 절반으로 설정 */
-    margin :0; /* 이미지 박스의 여백을 조절 */
+    position: relative;
+    width: calc(50% - 160px);
+    margin-right: 0px;
 }
+
+.image-content {
+    position: relative;
+}
+
 
 .image-box img {
     width: 100%; /* 이미지를 부모 요소에 꽉 차게 설정 */
     height: auto; /* 이미지 비율을 유지하며 너비에 맞춤 */
     max-width: 800px; /* 이미지의 최대 너비를 설정하여 정사각형 형태 유지 */
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    visibility: hidden; /* 초기에 텍스트 숨김 */
+}
+
+.image-box:hover .text-container {
+    visibility: visible; /* 마우스 커서를 이미지 위에 가져다 댔을 때 텍스트를 보이도록 설정 */
+}
+
+.text-container p {
+    color: white;
+    font-weight: bolder;
+    background-color: none (0, 0, 0, 0.5);
+    padding: 40px 40px;
+    font-family: 'ypseo';
+    font-size: 40px;
+}
+
+
+.hidden-text {
+    display: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 10px;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none; /* 링크의 밑줄 제거 */
+    color: white; /* 링크의 텍스트 색상을 하얀색으로 지정 */
+}
+
+
+a:hover {
+    color: none; /* 호버 시 색 변환 없음 */
 }
 
 

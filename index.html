@@ -24,8 +24,8 @@
         <ul>
             <!-- 게임 리스트 -->
             <li class="dropdown">
-                <a href="#" class="dropbtn">게임 리스트</a>
-                <div class="dropdown-content" id="gameListDropdown">
+                <a href="#" >게임 리스트</a>
+                <div class="dropdown-content">
                     <a href="G_RPG.html">RPG</a>
                     <a href="G_TCG.html">TCG</a>
                     <a href="G.AOS_">AOS</a>
@@ -38,32 +38,35 @@
             </li>
             <!-- 스크린샷 -->
             <li><a href="#">스크린샷</a></li>
-            <!-- 다운로드 -->
-            <li><a href="#">다운로드</a></li>
             <!-- 커뮤니티 -->
             <li><a href="#">커뮤니티</a></li>
         </ul>
     </nav>
 
     <div class="image-grid">
-        <div class="image-box">
-            <img src="./gameImage/cartoongame.jpg" alt="이미지1">
+        <div class="image-box" onmouseenter="showText('text1')" onmouseleave="hideText('text1')">
+            <div class="image-content">
+                <img src="./gameImage/game8.jpeg" alt="이미지1">
+                <div class="text-container" id="text1">
+                    <p><a href="introduce.html">소개글</a></p>
+                </div>
+            </div>
         </div>
-        <div class="image-box">
-            <img src="./gameImage/cartoongame1.jpg" alt="이미지2">
+        
+        <div class="image-box" onmouseenter="showText('text2')" onmouseleave="hideText('text2')">
+            <div class="image-content">
+                <img src="./gameImage/game10.jpeg" alt="이미지2">
+                <div class="text-container" id="text2">
+                    <p><a href="notice.html">공지사항</a></p>
+                </div>
+            </div>
         </div>
-        <div class="image-box">
-            <img src="./gameImage/cartoongame.jpg" alt="이미지1">
-        </div>
-        <div class="image-box">
-            <img src="./gameImage/cartoongame1.jpg" alt="이미지2">
-        </div>
+    </div>
     
+    <!-- 나머지 이미지들도 동일한 방식으로 추가 -->
     
-
     <footer>
         <p>© 2024 게임 이름. 모든 권리 보유.</p>
     </footer>
 </body>
 </html>
-
