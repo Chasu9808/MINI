@@ -42,9 +42,8 @@ nav ul li a {
     display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: black; /* 글자색을 검은색으로 변경 */
-    /* background-color:  초록색 배경 추가 */
     border-radius: 5px; /* 모서리를 둥글게 만듭니다. */
     transition: background-color 0.3s ease; /* 배경색 변경에 부드러운 전환 효과 적용 */
     font-weight: 900; /* 글꼴을 두껍게 만듭니다. */
@@ -124,7 +123,7 @@ footer {
     background-color: #f9f9f9;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
-    width: 173px; /* 너비 자동으로 설정 */
+    width: 148px; /* 너비 자동으로 설정 */
     min-width: 120px; /* 최소 너비 설정 */
 }
 
