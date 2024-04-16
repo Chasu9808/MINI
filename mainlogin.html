@@ -1,0 +1,72 @@
+<!-- 메인 HTML 파일 -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게임 소개</title>
+    <link rel="stylesheet" href="CSS/stylemainlogin.css">
+    <script src="./JS/mainlogin.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- 로그인창 바로가기 링크 -->
+        <a href="login.html" class="login-link" onclick="redirectToMain()">LOGIN</a>
+    </header>
+
+    <div class="center-text">
+        <!-- <h1> GAME COLLECTION </h1> -->
+        <a href="index.html" class="main-page-link"> GAME COLLECTION </a>
+    </div> 
+
+    <nav>
+        <ul>
+            <!-- 게임 리스트 -->
+            <li class="dropdown">
+                <a href="gamelist.html" >게임 리스트</a>
+                <div class="dropdown-content">
+                    <a href="rpg.html">RPG</a>
+                    <a href="tcg.html">TCG</a>
+                    <a href="aos.html">AOS</a>
+                    <a href="fps.html"> FPS</a>
+                    <a href="tps.html">TPS</a>
+                    <a href="acade.html">ACADE</a>
+                    <a href="ticoon.html">TICOON</a>
+                    <a href="music.html">MUSIC</a>
+                </div>
+            </li>
+            <!-- 스크린샷 -->
+            <li><a href="#">스크린샷</a></li>
+            <!-- 커뮤니티 -->
+            <li><a href="#">커뮤니티</a></li>
+        </ul>
+    </nav>
+
+    <div class="image-grid">
+        <div class="image-box" onmouseenter="showText('text1')" onmouseleave="hideText('text1')">
+            <div class="image-content">
+                <img src="./gameImage/game8.jpeg" alt="이미지1">
+                <div class="text-container" id="text1">
+                    <p><a href="introduce.html">소개글</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-box" onmouseenter="showText('text2')" onmouseleave="hideText('text2')">
+            <div class="image-content">
+                <img src="./gameImage/game10.jpeg" alt="이미지2">
+                <div class="text-container" id="text2">
+                    <p><a href="notice.html">공지사항</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 나머지 이미지들도 동일한 방식으로 추가 -->
+    
+    <footer>
+        <p>© 2024 게임 이름. 모든 권리 보유.</p>
+    </footer>
+</body>
+</html>
