@@ -152,7 +152,7 @@ footer {
 }
 
 .image-box {
-    width: calc(25% - 20px); /* 4개의 이미지가 한 줄에 정확히 들어가도록 설정 */
+    width: calc(50% - 0px); /* 4개의 이미지가 한 줄에 정확히 들어가도록 설정 */
     margin: 0px; /* 이미지 간격 조정 */
     border-radius: 10px; /* 이미지 박스를 둥글게 만듦 */
     overflow: hidden; /* 이미지가 넘칠 경우 잘라냄 */
@@ -162,6 +162,7 @@ footer {
 .image-content {
     position: relative;
     overflow: hidden; /* 이미지가 넘칠 경우 잘라냄 */
+    margin: 0px ;
 }
 
 
